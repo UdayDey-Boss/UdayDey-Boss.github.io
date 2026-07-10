@@ -16,10 +16,10 @@ export default function Connects() {
           03 — How it connects
         </p>
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight max-w-xl mb-3">
-          Nothing here is a badge. Everything here was used to build something.
+          These aren't technologies I've studied. They're technologies I've built with.
         </h2>
         <p className="text-[15px] text-muted mb-12 md:mb-14 max-w-md">
-          Select a skill — the system it was used in responds, above.
+         Select any technology to reveal where it was applied.
         </p>
 
         <div className="flex flex-col">
@@ -46,8 +46,8 @@ export default function Connects() {
                       aria-pressed={isActive}
                       onClick={() => toggleSkill(skill.id)}
                       className={`font-mono text-[12.5px] px-3 py-1.5 border transition-colors duration-200 ${
-                        isActive
-                          ? "bg-ink text-bg border-ink"
+                       isActive
+  ? "bg-ink text-bg border-ink scale-[1.03] shadow-sm"
                           : "border-border text-ink/80 hover:border-borderStrong hover:bg-surface"
                       }`}
                     >
