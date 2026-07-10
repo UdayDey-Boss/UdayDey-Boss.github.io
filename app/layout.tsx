@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+import "@fontsource/instrument-sans/400.css";
+import "@fontsource/instrument-sans/500.css";
+import "@fontsource/instrument-sans/600.css";
+import "@fontsource/space-mono/400.css";
+import "@fontsource/space-mono/700.css";
+import "./globals.css";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://udaydey-boss.github.io"),
 
@@ -55,3 +63,17 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className="font-sans bg-bg text-ink antialiased selection:bg-accent selection:text-white">
+        {children}
+      </body>
+    </html>
+  );
+}
