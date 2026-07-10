@@ -53,6 +53,9 @@ export default function Systems() {
                     </span>
                   </div>
                   <p className="font-mono text-[12px] text-muted">{p.type}</p>
+                  <p className="mt-2 text-sm text-muted max-w-md">
+  {p.shortDescription}
+</p>
                 </div>
 
                 {linked && activeSkillLabel && (
