@@ -132,14 +132,18 @@ export const projects: Project[] = [
 
     extraTags: ["Bangla Voice Input"],
 
-    skillIds: [
-      "php",
-      "javascript",
-      "mysql",
-      "ajax",
-      "json",
-      "mvc",
-    ],
+  skillIds: [
+  "php",
+  "javascript",
+  "mysql",
+  "ajax",
+  "json",
+  "mvc",
+  "git",
+  "github",
+  "vscode",
+  "phpmyadmin",
+],
 
     href: "https://github.com/UdayDey-Boss/Bazar-Hisab",
 
@@ -176,16 +180,20 @@ export const projects: Project[] = [
 
     extraTags: ["Team Lead"],
 
-    skillIds: [
-      "php",
-      "html5",
-      "css3",
-      "javascript",
-      "mysql",
-      "ajax",
-      "json",
-      "mvc",
-    ],
+ skillIds: [
+  "php",
+  "html5",
+  "css3",
+  "javascript",
+  "mysql",
+  "ajax",
+  "json",
+  "mvc",
+  "git",
+  "github",
+  "vscode",
+  "phpmyadmin",
+],
 
     href: "https://github.com/UdayDey-Boss/-Web_Project_Spring_25_26_G2",
   },
