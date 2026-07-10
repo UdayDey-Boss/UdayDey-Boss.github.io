@@ -48,17 +48,17 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 border-t border-l border-border">
           {links.map((l, i) => (
-            <motion.a
-              key={l.label}
-              href={l.href}
-              target={l.href.startsWith("http") ? "_blank" : undefined}
-              rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
-              transition={{ duration: 0.5, ease, delay: i * 0.04 }}
-              className="group border-b border-r border-border p-5 md:p-6 flex flex-col justify-between gap-6 hover:bg-surface hover:-translate-y-1 transition-all duration-200
-            >
+           <motion.a
+  key={l.label}
+  href={l.href}
+  target={l.href.startsWith("http") ? "_blank" : undefined}
+  rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
+  initial={{ opacity: 0, y: 12 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, margin: "-10%" }}
+  transition={{ duration: 0.5, ease, delay: i * 0.04 }}
+  className="group border-b border-r border-border p-5 md:p-6 flex flex-col justify-between gap-6 hover:bg-surface hover:-translate-y-1 transition-all duration-200"
+>
               <span className="font-mono text-[11px] uppercase tracking-wider text-muted">
                 {l.label}
               </span>
