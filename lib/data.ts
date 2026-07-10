@@ -5,7 +5,7 @@ export const profile = {
   study: "B.Sc. Computer Science & Engineering, AIUB",
   status: "Open to work",
   summary:
-    "I build full-stack web applications with C#, PHP and JavaScript on MVC architecture — usually starting from a real, unglamorous problem rather than a tutorial. Currently looking for a Software Engineering role where I can keep shipping.",
+    "I enjoy turning practical, everyday problems into software people can actually use. From building a smart grocery expense tracker with Bangla voice input to developing management systems, I focus on creating reliable full-stack applications with clean architecture, thoughtful engineering, and real-world impact. I'm currently seeking a Software Engineering role where I can continue learning, building, and solving meaningful problems.",
   email: "udayday4.ud@gmail.com",
   phone: "+880 1915 653027",
   address: "51, Radhika Mohan Basak Lane, Dhaka-1100, Bangladesh",
@@ -106,36 +106,82 @@ export const projects: Project[] = [
   {
     id: "bazar-hisab",
     name: "Bazar Hisab",
-    type: "Personal solo project",
+    type: "Personal Solo Project",
     problem:
-      "Households in Dhaka track grocery spending on paper, or not at all — no record of what was bought, what it cost, or what's about to expire.",
+      "Many households still manage grocery expenses manually, making it difficult to track spending, monitor purchased items, or remember products that are close to expiry.",
+
     build: [
-      "A full-stack MVC app with a real-time expense dashboard, expiry alerts, and one-click PDF/print reports.",
-      "A custom Bangla-language parser on the Web Speech API — users log purchases by speaking in Bangla, and the app extracts item and quantity accurately.",
+      "Built a full-stack MVC web application featuring real-time expense tracking, expiry reminders, printable reports, and PDF export.",
+      "Developed a Bangla voice-input system using the Web Speech API that intelligently extracts grocery items and quantities from natural spoken language.",
     ],
+
     proof:
-      "bcrypt password hashing, prepared statements against SQL injection, and AJAX-driven CRUD for zero page reloads.",
-    stack: ["PHP", "MySQL", "JavaScript", "AJAX", "MVC", "Web Speech API"],
-    extraTags: ["Bangla voice input"],
-    skillIds: ["php", "javascript", "mysql", "ajax", "json", "mvc"],
+      "Implemented bcrypt password hashing, prepared SQL statements to prevent SQL injection, and AJAX-powered CRUD operations for a smooth, reload-free user experience.",
+
+    stack: [
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "AJAX",
+      "MVC",
+      "Web Speech API",
+    ],
+
+    extraTags: ["Bangla Voice Input"],
+
+    skillIds: [
+      "php",
+      "javascript",
+      "mysql",
+      "ajax",
+      "json",
+      "mvc",
+    ],
+
     href: "https://github.com/UdayDey-Boss/Bazar-Hisab",
+
     featured: true,
   },
+
   {
     id: "library-management-system",
     name: "Library Management System",
-    type: "Academic project — team lead, team of 4",
+    type: "Academic Project • Team Lead (4 Members)",
+
     problem:
-      "A university library ran on no digital catalogue — member records, borrowing, and access were handled by hand.",
+      "Managing books, members, and borrowing records manually was inefficient and difficult to maintain as the library grew.",
+
     build: [
-      "Led a four-person team building a web-based library system on MVC architecture.",
-      "Owned the member authentication and profile module — registration, login, role-based access, session management.",
+      "Led a team of four students to design and develop a web-based Library Management System using MVC architecture.",
+      "Designed and implemented the authentication system, user registration, profile management, role-based access control, and session handling.",
     ],
+
     proof:
-      "Prepared SQL statements, server-side validation, and AJAX-driven dynamic features layered on top.",
-    stack: ["PHP", "HTML5", "CSS3", "JavaScript", "AJAX", "MySQL", "MVC"],
-    extraTags: ["Team lead"],
-    skillIds: ["php", "html5", "css3", "javascript", "mysql", "ajax", "json", "mvc"],
+      "Integrated prepared SQL statements, server-side validation, and AJAX-powered dynamic interactions to improve security and usability.",
+
+    stack: [
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "AJAX",
+      "MySQL",
+      "MVC",
+    ],
+
+    extraTags: ["Team Lead"],
+
+    skillIds: [
+      "php",
+      "html5",
+      "css3",
+      "javascript",
+      "mysql",
+      "ajax",
+      "json",
+      "mvc",
+    ],
+
     href: "https://github.com/UdayDey-Boss/-Web_Project_Spring_25_26_G2",
   },
 ];
