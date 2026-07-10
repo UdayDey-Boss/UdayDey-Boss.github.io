@@ -19,7 +19,7 @@ export default function Systems() {
           02 — Systems I&apos;ve built
         </p>
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight max-w-xl mb-14 md:mb-16">
-          Two problems, taken from start to something people can use.
+          Real software built to solve real problems.
         </h2>
 
         <div className="flex flex-col">
@@ -45,9 +45,9 @@ export default function Systems() {
 
                 <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 mb-6">
                   <div>
-                    <span className="font-mono text-[12px] text-muted mr-3">
-                      0{i + 1}
-                    </span>
+                <span className="font-mono text-[18px] md:text-[22px] text-muted/40 mr-4">
+  0{i + 1}
+</span>
                     <span className="text-2xl md:text-[1.7rem] font-medium tracking-tight text-ink">
                       {p.name}
                     </span>
@@ -98,7 +98,7 @@ export default function Systems() {
                   </div>
                 </div>
 
-                <div className="mt-8 flex flex-wrap items-center gap-2">
+               <div className="mt-10 flex flex-wrap items-center gap-2">
                   {p.stack.map((s) => (
                     <span
                       key={s}
@@ -121,9 +121,9 @@ export default function Systems() {
                   href={p.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-8 inline-flex items-center gap-1.5 font-mono text-[13px] text-ink border-b border-ink/30 pb-0.5 transition-colors duration-200 hover:border-ink"
+                  className="mt-10 inline-flex items-center gap-1.5 font-mono text-[13px] text-ink border-b border-ink/30 pb-0.5 transition-colors duration-200 hover:border-ink"
                 >
-                  View source ↗
+                  Explore Project →
                 </a>
               </motion.article>
             );
