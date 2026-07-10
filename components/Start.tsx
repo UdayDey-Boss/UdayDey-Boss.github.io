@@ -26,14 +26,16 @@ export default function Start() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 lg:gap-16 items-start">
           <div>
             <motion.h1
-              initial={{ opacity: 0, y: 14 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-10%" }}
-              transition={{ duration: 0.6, ease, delay: 0.05 }}
-              className="text-[2.6rem] leading-[1.05] sm:text-6xl md:text-7xl font-medium tracking-tight text-ink"
-            >
-              {profile.name}
-            </motion.h1>
+  initial={{ opacity: 0, y: 14 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, margin: "-10%" }}
+  transition={{ duration: 0.6, ease, delay: 0.05 }}
+  className="text-[2.7rem] leading-[1.02] sm:text-6xl md:text-7xl font-medium tracking-tight text-ink max-w-4xl"
+>
+  I build software that solves
+  <br />
+  real-world problems.
+</motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 10 }}
