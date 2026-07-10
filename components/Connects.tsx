@@ -1,13 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { skillTiers } from "@/lib/data";
+import { skillTiers, projects } from "@/lib/data";
 import { useLink } from "@/lib/SkillLinkContext";
 
 const ease = [0.2, 0.7, 0.3, 1] as const;
 
 export default function Connects() {
   const { activeSkill, toggleSkill } = useLink();
+  const selectedSkill = skillTiers
+  .flatMap((tier) => tier.skills)
+  .find((skill) => skill.id === activeSkill);
+
+const relatedProjects = activeSkill
+  ? projects.filter((project) => project.skillIds.includes(activeSkill))
+  : [];
 
   return (
     <section id="connects" className="py-20 md:py-28 border-b border-border">
@@ -58,6 +65,57 @@ export default function Connects() {
               </div>
             </motion.div>
           ))}
+          {selectedSkill && (
+  <motion.div
+    initial={{ opacity: 0, y: 10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.25 }}
+    className="mt-10 border border-border bg-surface p-6"
+  >
+    <p className="font-mono text-[12px] uppercase tracking-wider text-muted">
+      Selected Skill
+    </p>
+
+    <h3 className="mt-2 text-2xl font-medium text-ink">
+      {selectedSkill.label}
+    </h3>
+
+    {relatedProjects.length > 0 ? (
+      <>
+        <p className="mt-5 text-sm text-muted">
+          Used in the following project{relatedProjects.length > 1 ? "s" : ""}:
+        </p>
+
+        <div className="mt-4 space-y-4">
+          {relatedProjects.map((project) => (
+            <div
+              key={project.id}
+              className="border-l-2 border-accent pl-4"
+            >
+              <p className="font-medium text-ink">
+                {project.name}
+              </p>
+
+              <p className="text-sm text-muted">
+                {project.type}
+              </p>
+            </div>
+          ))}
+        </div>
+      </>
+    ) : (
+      <>
+        <p className="mt-5 text-sm text-muted">
+          This skill isn't used in a featured project yet.
+        </p>
+
+        <p className="mt-2 text-sm text-muted">
+          It is currently being explored through coursework, practice, or future projects.
+        </p>
+      </>
+    )}
+  </motion.div>
+)}
           <div className="border-t border-border" />
         </div>
       </div>
