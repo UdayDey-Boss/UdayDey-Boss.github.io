@@ -24,7 +24,7 @@ export default function Record() {
           04 — How I got here
         </p>
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight max-w-xl mb-14 md:mb-16">
-          Every entry below follows the same fields — nothing hidden, nothing dressed up.
+         Education, certifications, and milestones that shaped my journey.
         </h2>
 
         <div className="flex flex-col">
@@ -44,7 +44,9 @@ export default function Record() {
                   <p className="font-mono text-[10.5px] uppercase tracking-wider text-muted mb-1">
                     {kindLabel[r.kind]}
                   </p>
-                  <p className="text-[15.5px] font-medium text-ink">{r.title}</p>
+                  <p className="text-[17px] font-semibold tracking-tight text-ink">
+    {r.title}
+</p>
                   <p className="text-[13.5px] text-muted mt-0.5">{r.institution}</p>
                 </div>
                 <div className="md:text-right">
@@ -54,10 +56,12 @@ export default function Record() {
                       onClick={() => setOpenId(r.id)}
                       className="inline-flex items-center gap-1.5 font-mono text-[12px] text-accentDeep border border-accent/30 bg-accentTint px-3 py-1.5 hover:border-accent transition-colors duration-200"
                     >
-                      Verified ↗
+                     View Credential ↗
                     </button>
                   ) : r.metric ? (
-                    <p className="font-mono text-[13px] text-ink">{r.metric}</p>
+                   <p className="font-mono text-[12px] tracking-wide text-accentDeep">
+  {r.metric}
+</p>
                   ) : null}
                 </div>
               </motion.div>
@@ -66,13 +70,28 @@ export default function Record() {
           <div className="border-t border-border" />
         </div>
 
-        <div className="mt-10 flex flex-wrap gap-x-8 gap-y-2 font-mono text-[12.5px] text-muted">
-          {languages.map((l) => (
-            <span key={l.name}>
-              {l.name} <span className="text-ink/70">— {l.level}</span>
-            </span>
-          ))}
-        </div>
+       <div className="mt-12 border-t border-border pt-8">
+  <p className="font-mono text-[11px] uppercase tracking-wider text-muted mb-5">
+    Languages
+  </p>
+
+  <div className="flex flex-wrap gap-3">
+    {languages.map((l) => (
+      <div
+        key={l.name}
+        className="border border-border px-4 py-2"
+      >
+        <p className="text-sm font-medium">
+          {l.name}
+        </p>
+
+        <p className="font-mono text-[11px] text-muted">
+          {l.level}
+        </p>
+      </div>
+    ))}
+  </div>
+</div>
       </div>
 
       {openRecord?.verified && (
