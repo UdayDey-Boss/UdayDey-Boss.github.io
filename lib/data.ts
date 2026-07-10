@@ -92,6 +92,7 @@ export interface Project {
   id: string;
   name: string;
   type: string;
+  shortDescription: string;
   problem: string;
   build: string[];
   proof: string;
@@ -107,6 +108,8 @@ export const projects: Project[] = [
     id: "bazar-hisab",
     name: "Bazar Hisab",
     type: "Personal Solo Project",
+    shortDescription:
+  "Smart grocery expense tracker with Bangla voice input.",
     problem:
       "Many households still manage grocery expenses manually, making it difficult to track spending, monitor purchased items, or remember products that are close to expiry.",
 
@@ -147,6 +150,8 @@ export const projects: Project[] = [
     id: "library-management-system",
     name: "Library Management System",
     type: "Academic Project • Team Lead (4 Members)",
+    shortDescription:
+  "Digital library management system with secure authentication.",
 
     problem:
       "Managing books, members, and borrowing records manually was inefficient and difficult to maintain as the library grew.",
