@@ -118,7 +118,7 @@ export default function Start() {
               <Image
                 src="/Uday CV PIC.jpg"
                 alt="Portrait of Uday Dey"
-                width={600}
+                width={800}
                 height={600}
                 className="w-full h-full object-cover grayscale-[15%]"
                 priority
