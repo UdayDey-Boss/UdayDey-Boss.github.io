@@ -4,6 +4,30 @@
 
 :root {
   --rail-width: 64px;
+
+  --color-bg: 247 247 245;
+  --color-surface: 255 255 255;
+  --color-border: 228 227 222;
+  --color-borderStrong: 211 209 201;
+  --color-ink: 20 21 26;
+  --color-muted: 107 109 118;
+  --color-faint: 154 156 163;
+  --color-accent: 48 73 224;
+  --color-accentDeep: 31 46 158;
+  --color-accentTint: 238 240 252;
+}
+
+.dark {
+  --color-bg: 16 17 20;
+  --color-surface: 24 25 30;
+  --color-border: 42 44 51;
+  --color-borderStrong: 61 64 74;
+  --color-ink: 240 240 238;
+  --color-muted: 154 157 168;
+  --color-faint: 112 114 124;
+  --color-accent: 110 140 255;
+  --color-accentDeep: 178 195 255;
+  --color-accentTint: 32 38 64;
 }
 
 * {
@@ -20,23 +44,27 @@
 }
 
 html, body {
-  background: #F7F7F5;
-  color: #14151A;
+  background: rgb(var(--color-bg));
+  color: rgb(var(--color-ink));
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ::selection {
-  background: #3049E0;
-  color: #FFFFFF;
+  background: rgb(var(--color-accent));
+  color: rgb(var(--color-bg));
 }
 
 :focus-visible {
-  outline: 2px solid #3049E0;
+  outline: 2px solid rgb(var(--color-accent));
   outline-offset: 2px;
   border-radius: 2px;
 }
 
 .rule {
-  border-color: #E4E3DE;
+  border-color: rgb(var(--color-border));
 }
 
 .container-page {
