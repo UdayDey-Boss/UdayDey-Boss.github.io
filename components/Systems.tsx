@@ -1,5 +1,5 @@
 "use client";
-import { Github } from "lucide-react";
+
 import { motion } from "framer-motion";
 import { projects, skillTiers } from "@/lib/data";
 import { useLink } from "@/lib/SkillLinkContext";
@@ -118,15 +118,14 @@ export default function Systems() {
                   ))}
                 </div>
 
-               <a
-  href={p.href}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-10 inline-flex items-center gap-2 font-mono text-[13px] text-ink border-b border-ink/30 pb-0.5 transition-all duration-200 hover:border-ink hover:gap-3"
->
-  <Github size={15} strokeWidth={2} />
-  <span>View on GitHub ↗</span>
-</a>
+                <a
+                  href={p.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-10 inline-flex items-center gap-1.5 font-mono text-[13px] text-ink border-b border-ink/30 pb-0.5 transition-colors duration-200 hover:border-ink"
+                >
+                  Explore Project →
+                </a>
               </motion.article>
             );
           })}
