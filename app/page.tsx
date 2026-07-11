@@ -2,6 +2,7 @@
 
 import { LinkProvider } from "@/lib/SkillLinkContext";
 import Rail from "@/components/Rail";
+import ThemeToggle from "@/components/ThemeToggle";
 import Start from "@/components/Start";
 import Systems from "@/components/Systems";
 import Connects from "@/components/Connects";
@@ -18,6 +19,7 @@ export default function Home() {
         Skip to content
       </a>
       <Rail />
+      <ThemeToggle />
       <main className="pt-14 lg:pt-0">
         <Start />
         <Systems />
