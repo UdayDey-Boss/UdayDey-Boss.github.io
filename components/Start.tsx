@@ -77,13 +77,7 @@ export default function Start() {
               transition={{ duration: 0.6, ease, delay: 0.3 }}
               className="mt-8 text-base md:text-lg text-ink/80 max-w-xl leading-relaxed"
             >
-              I enjoy turning practical, everyday problems into software people
-              can actually use. From building a smart grocery expense tracker
-              with Bangla voice input to developing management systems, I focus
-              on creating reliable full-stack applications with clean
-              architecture, thoughtful engineering, and real-world impact. I&apos;m
-              currently seeking a Software Engineering role where I can
-              continue learning, building, and solving meaningful problems.
+              I build software that solves real-world problems by turning everyday challenges into practical, reliable full-stack applications that make life easier and create real value.
             </motion.p>
 
             <motion.div
