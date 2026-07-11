@@ -16,7 +16,7 @@ export default function Home() {
         href="#start"
         className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-ink focus:text-bg focus:px-3 focus:py-2 font-mono text-[13px]"
       >
-       
+        Skip to content
       </a>
       <Rail />
       <ThemeToggle />
