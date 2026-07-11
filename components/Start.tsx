@@ -116,7 +116,7 @@ export default function Start() {
           >
             <div className="w-48 sm:w-56 lg:w-60 border border-border overflow-hidden">
               <Image
-                src="/profile.jpg"
+                src="/Uday CV PIC.jpg"
                 alt="Portrait of Uday Dey"
                 width={600}
                 height={600}
