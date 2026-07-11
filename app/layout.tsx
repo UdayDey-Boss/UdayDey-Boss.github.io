@@ -7,16 +7,9 @@ import "@fontsource/space-mono/700.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://udaydey-boss.github.io"),
-
-  title: {
-    default: "Uday Dey | Full-Stack Engineer",
-    template: "%s | Uday Dey",
-  },
-
+  title: "Uday Dey | Full-Stack Engineer",
   description:
     "Portfolio of Uday Dey, a Computer Science & Engineering student at AIUB and Full-Stack Engineer specializing in PHP, C#, JavaScript, MVC Architecture, MySQL, and modern web application development.",
-
   keywords: [
     "Uday Dey",
     "Full Stack Developer",
@@ -32,46 +25,48 @@ export const metadata: Metadata = {
     "Portfolio",
     "Web Developer",
   ],
-
-  authors: [
-    {
-      name: "Uday Dey",
-    },
-  ],
-
+  authors: [{ name: "Uday Dey" }],
   creator: "Uday Dey",
-
+  robots: "index, follow",
   openGraph: {
     title: "Uday Dey | Full-Stack Engineer",
     description:
       "Computer Science & Engineering student at AIUB building practical full-stack software solutions using PHP, C#, JavaScript, MVC Architecture and MySQL.",
-    url: "https://udaydey-boss.github.io",
+    url: "https://udaydey-boss.github.io/",
     siteName: "Uday Dey Portfolio",
     locale: "en_US",
     type: "website",
   },
-
   twitter: {
     card: "summary_large_image",
     title: "Uday Dey | Full-Stack Engineer",
     description:
       "Portfolio of Uday Dey — Full-Stack Engineer and Computer Science student at AIUB.",
   },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
 };
+
+
+const themeInitScript = `
+(function () {
+  try {
+    var stored = localStorage.getItem('theme');
+    var dark = stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    if (dark) document.documentElement.classList.add('dark');
+  } catch (e) {}
+})();
+`;
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="font-sans bg-bg text-ink antialiased selection:bg-accent selection:text-white">
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
+      <body className="font-sans bg-bg text-ink antialiased" suppressHydrationWarning>
         {children}
       </body>
     </html>
