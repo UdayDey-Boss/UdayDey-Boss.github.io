@@ -26,32 +26,40 @@ export default function Start() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 lg:gap-16 items-start">
           <div>
             <motion.h1
-  initial={{ opacity: 0, y: 14 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, margin: "-10%" }}
-  transition={{ duration: 0.6, ease, delay: 0.05 }}
-  className="text-[2.7rem] leading-[1.02] sm:text-6xl md:text-7xl font-medium tracking-tight text-ink max-w-4xl"
->
-  I build software that solves
-  <br />
-  real-world problems.
-</motion.h1>
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-10%" }}
+              transition={{ duration: 0.6, ease, delay: 0.05 }}
+              className="text-[2.6rem] leading-[1.05] sm:text-6xl md:text-7xl font-medium tracking-tight text-ink"
+            >
+              {profile.name}
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-10%" }}
+              transition={{ duration: 0.6, ease, delay: 0.12 }}
+              className="mt-4 text-xl md:text-2xl font-medium text-ink/80 max-w-xl leading-snug"
+            >
+              I build software that solves real-world problems.
+            </motion.p>
 
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10%" }}
-              transition={{ duration: 0.6, ease, delay: 0.15 }}
-              className="mt-5 text-xl md:text-2xl text-muted max-w-xl"
+              transition={{ duration: 0.6, ease, delay: 0.18 }}
+              className="mt-4 text-lg md:text-xl text-muted max-w-xl"
             >
-              {profile.role}, based in {profile.location}.
+              Full-Stack Engineer, based in Dhaka, Bangladesh.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10%" }}
-              transition={{ duration: 0.6, ease, delay: 0.22 }}
+              transition={{ duration: 0.6, ease, delay: 0.24 }}
               className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-[13px] text-muted"
             >
               <span>{profile.study}</span>
@@ -66,17 +74,23 @@ export default function Start() {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10%" }}
-              transition={{ duration: 0.6, ease, delay: 0.28 }}
+              transition={{ duration: 0.6, ease, delay: 0.3 }}
               className="mt-8 text-base md:text-lg text-ink/80 max-w-xl leading-relaxed"
             >
-              {profile.summary}
+              I enjoy turning practical, everyday problems into software people
+              can actually use. From building a smart grocery expense tracker
+              with Bangla voice input to developing management systems, I focus
+              on creating reliable full-stack applications with clean
+              architecture, thoughtful engineering, and real-world impact. I&apos;m
+              currently seeking a Software Engineering role where I can
+              continue learning, building, and solving meaningful problems.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-10%" }}
-              transition={{ duration: 0.6, ease, delay: 0.34 }}
+              transition={{ duration: 0.6, ease, delay: 0.36 }}
               className="mt-10 flex flex-wrap items-center gap-3"
             >
               <a
