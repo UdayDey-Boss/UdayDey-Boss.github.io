@@ -5,7 +5,7 @@ export const profile = {
   study: "B.Sc. Computer Science & Engineering, AIUB",
   status: "Open to work",
   summary:
-    "I enjoy turning practical, everyday problems into software people can actually use. From building a smart grocery expense tracker with Bangla voice input to developing management systems, I focus on creating reliable full-stack applications with clean architecture, thoughtful engineering, and real-world impact. I'm currently seeking a Software Engineering role where I can continue learning, building, and solving meaningful problems.",
+    "I build software that solves real-world problems by turning everyday challenges into practical, reliable full-stack applications that make life easier and create real value.",
   email: "udayday4.ud@gmail.com",
   phone: "+880 1915 653027",
   address: "51, Radhika Mohan Basak Lane, Dhaka-1100, Bangladesh",
