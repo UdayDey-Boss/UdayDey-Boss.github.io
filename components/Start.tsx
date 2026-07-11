@@ -77,7 +77,7 @@ export default function Start() {
               transition={{ duration: 0.6, ease, delay: 0.3 }}
               className="mt-8 text-base md:text-lg text-ink/80 max-w-xl leading-relaxed"
             >
-              I build software that solves real-world problems by turning everyday challenges into practical, reliable full-stack applications that make life easier and create real value.
+             Whether it's simplifying grocery expense tracking or improving library management, I enjoy building practical, reliable software that makes everyday tasks easier and delivers real value to the people who use it.
             </motion.p>
 
             <motion.div
