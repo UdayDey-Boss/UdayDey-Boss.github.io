@@ -114,7 +114,7 @@ export default function Start() {
             transition={{ duration: 0.6, ease, delay: 0.2 }}
             className="justify-self-start lg:justify-self-end"
           >
-            <div className="w-48 sm:w-56 lg:w-60 border border-border overflow-hidden">
+            <div className="w-56 sm:w-60 lg:w-64 border border-border overflow-hidden">
               <Image
                 src="/Uday CV PIC.jpg"
                 alt="Portrait of Uday Dey"
