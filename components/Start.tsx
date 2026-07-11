@@ -19,7 +19,7 @@ export default function Start() {
           viewport={{ once: true, margin: "-10%" }}
           transition={{ duration: 0.5, ease }}
           className="font-mono text-[13px] tracking-wide text-muted mb-8"
-        >
+      >
           01 — Start
         </motion.p>
 
