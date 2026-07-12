@@ -1,5 +1,4 @@
 "use client";
-
 import { LinkProvider } from "@/lib/SkillLinkContext";
 import Rail from "@/components/Rail";
 import ThemeToggle from "@/components/ThemeToggle";
