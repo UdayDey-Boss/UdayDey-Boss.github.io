@@ -19,7 +19,7 @@ export default function Systems() {
           02 — Systems I&apos;ve built
         </p>
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight max-w-xl mb-14 md:mb-16">
-          Two problems, taken from start to something people can use.
+          Real software built to solve real problems.
         </h2>
 
         <div className="flex flex-col">
@@ -123,7 +123,7 @@ export default function Systems() {
                   rel="noopener noreferrer"
                   className="mt-8 inline-flex items-center gap-1.5 font-mono text-[13px] text-ink border-b border-ink/30 pb-0.5 transition-colors duration-200 hover:border-ink"
                 >
-                  View source ↗
+                  Explore Project →
                 </a>
               </motion.article>
             );
