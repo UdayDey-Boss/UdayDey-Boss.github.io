@@ -250,7 +250,7 @@ export const records: RecordRow[] = [
       image: "/cisco-certificate.jpg",
     },
   },
-  {
+{
   id: "robot-soccer",
   period: "2024",
   title: "Winning Team — Robot Soccer Competition",
@@ -258,9 +258,10 @@ export const records: RecordRow[] = [
   kind: "achievement",
   verified: {
     image: "/robot-soccer-certificate.jpg",
-    
+    link: "#",
   },
 },
+
 
   ];
 
