@@ -258,7 +258,7 @@ export const records: RecordRow[] = [
   kind: "achievement",
   verified: {
     image: "/robot-soccer-certificate.jpg",
-    link: undefined,
+    link: "#",
   },
 },
 
