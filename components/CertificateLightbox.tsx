@@ -89,14 +89,15 @@ export default function CertificateLightbox({
                   </p>
                 )}
               </div>
-              <a
-                href={verifyHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-sm border border-ink px-4 py-2.5 font-mono text-[12.5px] text-ink hover:bg-ink hover:text-bg transition-colors duration-200 whitespace-nowrap"
-              >
-                Verify on Credly ↗
-              </a>
+              {verifyHref && (
+  <a
+    href={verifyHref}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Verify on Credly ↗
+  </a>
+)}
             </div>
           </motion.div>
         </motion.div>
