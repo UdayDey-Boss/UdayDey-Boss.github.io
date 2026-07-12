@@ -126,7 +126,7 @@ export default function Systems() {
   <Github size={15} strokeWidth={2} />
   <span>
     {p.id === "developer-portfolio"
-      ? "View Source ↗"
+      ? "Explore Source Code ↗"
       : "View on GitHub ↗"}
   </span>
 </a>
