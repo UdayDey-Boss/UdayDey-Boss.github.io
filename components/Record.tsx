@@ -34,7 +34,7 @@ export default function Record() {
           04 — How I got here
         </p>
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight max-w-xl mb-14 md:mb-16">
-          Every entry below follows the same fields — nothing hidden, nothing dressed up.
+          Education, certifications, and milestones that shaped my journey.
         </h2>
 
         <div className="flex flex-col">
