@@ -17,8 +17,8 @@ export const profile = {
 };
 
 export type SkillId =
-  | "csharp" | "javascript" | "php" | "sql" | "python"
-  | "html5" | "css3" | "ajax" | "json" | "mvc"
+  | "csharp" | "javascript" | "typescript" | "php" | "sql" | "python"
+  | "html5" | "css3" | "tailwind" | "nextjs" | "framer" | "ajax" | "json" | "mvc"
   | "mysql" | "oracle" | "mssql"
   | "vs" | "vscode" | "git" | "github" | "phpmyadmin"
   | "word" | "excel" | "powerpoint";
@@ -35,6 +35,16 @@ export interface SkillTier {
 }
 
 export const skillTiers: SkillTier[] = [
+  {
+  tier: "Modern",
+  note: "frameworks",
+  skills: [
+    { id: "nextjs", label: "Next.js" },
+    { id: "typescript", label: "TypeScript" },
+    { id: "tailwind", label: "Tailwind CSS" },
+    { id: "framer", label: "Framer Motion" },
+  ],
+},
   {
     tier: "Foundation",
     note: "languages",
@@ -224,11 +234,11 @@ export const projects: Project[] = [
 
   extraTags: ["Responsive", "SEO"],
 
-  skillIds: [
+ skillIds: [
   "nextjs",
   "typescript",
-  "tailwind-css",
-  "framer-motion",
+  "tailwind",
+  "framer",
   "javascript",
   "html5",
   "css3",
