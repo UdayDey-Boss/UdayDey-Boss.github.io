@@ -251,12 +251,16 @@ export const records: RecordRow[] = [
     },
   },
   {
-    id: "robot-soccer",
-    period: "2024",
-    title: "Winning Team — Robot Soccer Competition",
-    institution: "AIUB CS FEST 2024",
-    kind: "achievement",
+  id: "robot-soccer",
+  period: "2024",
+  title: "Winning Team — Robot Soccer Competition",
+  institution: "AIUB CS FEST 2024",
+  kind: "achievement",
+  verified: {
+    image: "/robot-soccer-certificate.jpg",
+    link: "#",
   },
+},
 ];
 
 export interface SectionDef {
