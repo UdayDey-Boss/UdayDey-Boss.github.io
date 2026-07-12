@@ -197,6 +197,48 @@ export const projects: Project[] = [
 
     href: "https://github.com/UdayDey-Boss/-Web_Project_Spring_25_26_G2",
   },
+
+  {
+  id: "developer-portfolio",
+  name: "Interactive Developer Portfolio",
+  type: "Personal Solo Project",
+
+  problem:
+    "Recruiters often spend limited time reviewing a candidate's portfolio. I built an interactive website that presents my projects, applied skills, certifications, and background in a clear, responsive, and engaging way.",
+
+  build: [
+    "Developed a responsive portfolio using Next.js, TypeScript, Tailwind CSS, and Framer Motion.",
+    "Implemented interactive skill-to-project highlighting, certificate lightboxes, reusable components, smooth animations, and SEO optimization.",
+  ],
+
+  proof:
+    "Built with reusable React components, responsive layouts, optimized metadata, and deployed using GitHub Pages.",
+
+  stack: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Framer Motion",
+    "GitHub Pages",
+  ],
+
+  extraTags: ["Responsive", "SEO"],
+
+  skillIds: [
+  "nextjs",
+  "typescript",
+  "tailwind-css",
+  "framer-motion",
+  "javascript",
+  "html5",
+  "css3",
+  "git",
+  "github",
+  "vscode",
+],
+
+  href: "https://github.com/UdayDey-Boss/UdayDey-Boss.github.io",
+},
 ];
 
 export interface RecordRow {
