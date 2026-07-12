@@ -127,7 +127,7 @@ export default function Systems() {
   <ExternalLink size={15} strokeWidth={2} />
   <span>
     {p.id === "developer-portfolio"
-      ? "Explore Source Code ↗"
+      ? "View on GitHub ↗"
       : "View on GitHub ↗"}
   </span>
 </a>
