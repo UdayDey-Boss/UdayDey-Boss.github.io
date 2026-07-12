@@ -36,8 +36,8 @@ export interface SkillTier {
 
 export const skillTiers: SkillTier[] = [
   {
-  tier: "Modern",
-  note: "frameworks",
+ tier: "Modern Web",
+note: "frameworks & tools",
   skills: [
     { id: "nextjs", label: "Next.js" },
     { id: "typescript", label: "TypeScript" },
@@ -212,7 +212,9 @@ export const projects: Project[] = [
   id: "developer-portfolio",
   name: "Interactive Developer Portfolio",
   type: "Personal Solo Project",
-
+ shortDescription:
+    "Interactive portfolio showcasing projects, skills, certifications, and experience.",
+    
   problem:
     "Recruiters often spend limited time reviewing a candidate's portfolio. I built an interactive website that presents my projects, applied skills, certifications, and background in a clear, responsive, and engaging way.",
 
@@ -232,7 +234,11 @@ export const projects: Project[] = [
     "GitHub Pages",
   ],
 
-  extraTags: ["Responsive", "SEO"],
+ extraTags: [
+  "Responsive",
+  "SEO",
+  "GitHub Pages",
+]
 
  skillIds: [
   "nextjs",
