@@ -234,11 +234,7 @@ export const projects: Project[] = [
     "GitHub Pages",
   ],
 
- extraTags: [
-  "Responsive",
-  "SEO",
-  "GitHub Pages",
-]
+extraTags: ["Responsive", "SEO"],
 
  skillIds: [
   "nextjs",
