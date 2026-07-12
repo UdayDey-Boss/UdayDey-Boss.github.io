@@ -262,6 +262,7 @@ export const records: RecordRow[] = [
   },
 },
 },
+  ];
 
 
 export interface SectionDef {
