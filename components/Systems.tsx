@@ -1,5 +1,6 @@
 "use client";
 
+import { Github } from "lucide-react";
 import { motion } from "framer-motion";
 import { projects, skillTiers } from "@/lib/data";
 import { useLink } from "@/lib/SkillLinkContext";
