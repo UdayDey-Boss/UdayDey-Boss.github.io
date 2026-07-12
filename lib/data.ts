@@ -259,7 +259,7 @@ export const records: RecordRow[] = [
   verified: {
     image: "/robot-soccer-certificate.jpg",
     link: undefined,
-  },
+  }
 },
 
   ];
