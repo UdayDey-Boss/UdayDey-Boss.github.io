@@ -257,10 +257,12 @@ export const records: RecordRow[] = [
   institution: "AIUB CS FEST 2024",
   kind: "achievement",
   verified: {
-  image: "/robot-soccer-certificate.jpg",
-}
+    image: "/robot-soccer-certificate.jpg",
+    link: "#",
+  },
 },
-];
+},
+
 
 export interface SectionDef {
   id: string;
