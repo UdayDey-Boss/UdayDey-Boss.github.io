@@ -84,7 +84,12 @@ export default function Record() {
           })}
           <div className="border-t border-border" />
         </div>
-
+        
+       <div className="mt-12 border-t border-border pt-8">
+  <p className="font-mono text-[11px] uppercase tracking-wider text-muted mb-5">
+    Languages
+  </p>
+         
         <div className="mt-10 flex flex-wrap gap-x-8 gap-y-2 font-mono text-[12.5px] text-muted">
           {languages.map((l) => (
             <span key={l.name}>
