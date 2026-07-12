@@ -131,7 +131,7 @@ export default function Systems() {
       : "View on GitHub ↗"}
   </span>
 </a>
-              </motion.article>
+             </motion.article>
             );
           })}
           <div className="border-t border-border" />
